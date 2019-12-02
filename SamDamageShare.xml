@@ -1,0 +1,122 @@
+<GuiXml>
+
+	<Font name="GDSFontGameBig" font="$(MEDIUM_FONT)|$(KB_20)|soft-shadow-thin" />
+	
+	<Controls>
+		
+		<TopLevelControl name="SDSWrapper" clampedToScreen="true">
+			
+			<AnchorFill/>
+			<Controls>
+				
+				<Control name="SDSTlw" mouseEnabled="true" clampedToScreen="true" resizeToFitDescendents="true">
+					
+					<Dimensions x="326" y="50" />
+					<Anchor point="TOPLEFT"/>
+					
+					<Controls>
+						
+						<Backdrop name="$(parent)Bg" centerColor="55000000" edgeColor="00000000">
+							
+							<AnchorFill/>
+							
+							<Edge edgeSize="0" />
+						
+						</Backdrop>
+												 
+						<Label name="$(parent)Label" horizontalAlignment="LEFT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Damage">
+							
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="4" />
+						
+						</Label>
+						
+						<Line name="$(parent)TitleSep" thickness="1" color="FFFFFFFF" layer="1">
+							
+							<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="31" />
+							<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-5" offsetY="31" />
+							
+						</Line>
+						
+						<Line name="$(parent)BlockSep" thickness="2" color="22FFFFFF" hidden="true" layer="1">
+							
+							<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="30" />
+							<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-5" offsetY="30" />
+							
+						</Line>
+						
+					</Controls>
+				</Control>
+			</Controls>
+		</TopLevelControl>
+
+
+		<TopLevelControl name="SDSADVWrapper" clampedToScreen="true">
+			
+			<AnchorFill/>
+			<Controls>
+				
+				<Control name="SDSADVTlw" mouseEnabled="true" clampedToScreen="true" resizeToFitDescendents="true">
+					
+					<Dimensions x="1130" y="50" />
+					<Anchor point="TOPLEFT"/>
+					
+					<Controls>
+						
+						<Backdrop name="$(parent)Bg" centerColor="55000000" edgeColor="00000000">
+							
+							<AnchorFill/>
+							
+							<Edge edgeSize="0" />
+						
+						</Backdrop>
+												 
+						<Label name="$(parent)NameLabel" mouseEnabled="true" horizontalAlignment="LEFT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Name">
+							
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="4" />
+
+						</Label>
+
+						<Label name="$(parent)DamageLabel" horizontalAlignment="RIGHT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Damage">
+							
+							<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-635" offsetY="4" />
+						
+						</Label>
+
+						<Label name="$(parent)HealingLabel" horizontalAlignment="LEFT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Healing">
+							
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)Bg" offsetX="515" offsetY="4" />
+
+						</Label>
+
+						<Label name="$(parent)TankedLabel" horizontalAlignment="LEFT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Tanked">
+							
+							<Anchor point="TOPLEFT" relativePoint="TOPLEFT" relativeTo="$(parent)Bg" offsetX="835" offsetY="4" />
+
+						</Label>
+
+						<Label name="$(parent)HealedLabel" horizontalAlignment="RIGHT" verticalAlignment="CENTER" font="GDSFontGameBig" text="Healed">
+							
+							<Anchor point="TOPRIGHT" relativePoint="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-5" offsetY="4" />
+
+						</Label>
+						
+						<Line name="$(parent)TitleSep" thickness="1" color="FFFFFFFF" layer="1">
+							
+							<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="31" />
+							<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-5" offsetY="31" />
+							
+						</Line>
+						
+						<Line name="$(parent)BlockSep" thickness="2" color="22FFFFFF" hidden="true" layer="1">
+							
+							<Anchor point="TOPLEFT" relativeTo="$(parent)Bg" offsetX="5" offsetY="30" />
+							<Anchor point="TOPRIGHT" relativeTo="$(parent)Bg" offsetX="-5" offsetY="30" />
+							
+						</Line>
+						
+					</Controls>
+				</Control>
+			</Controls>
+		</TopLevelControl>
+	</Controls>
+</GuiXml>

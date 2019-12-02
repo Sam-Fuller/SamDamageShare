@@ -1,0 +1,8 @@
+## Title: SamDamageShare
+## APIVersion: 100029
+## Author: Sammie
+## DependsOn: LibStub LibGroupSocket LibChatMessage
+## SavedVariables: SDSSavedVariables
+
+SamDamageShare.xml
+SamDamageShare.lua
